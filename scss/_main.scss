@@ -1,0 +1,88 @@
+main{
+    .column{
+        padding:1rem;
+        width:100%;
+        float:left;
+        .card{
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+            .details{
+                padding: 20px 10px;
+                h3{
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 18px;
+                    margin: 10px 0 15px 0; 
+                    
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+                button{
+                    background-color: #0d6efd;
+                    border-radius: 5px;
+                    border: none;
+                    color: #fff;
+                    padding: 10px;
+                    width: 100%;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                   
+                }
+                
+            }
+            .container{
+                position:relative;
+                img{
+                    width: 100%;
+                    display: block;
+                    border-radius: 20px 20px 0 0;
+                }
+            }
+            .container:after{
+                content: "";
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top:0;
+                left: 0;
+                border-radius: 20px 20px 0 0;
+                opacity: 0.7;
+                
+            }
+            }
+            
+    }
+    .destacado{
+        background-color: yellow;
+    }
+    .ofertas{
+        background-color: yellow;
+    }
+    .gaming{
+        background-color: yellow;
+    }
+    .proximo{
+        background-color: yellow;
+    
+    }
+    h2{
+        text-align: center;
+    }
+    @media only screen and (min-width: 576px){
+        .column{
+            width: 50%;
+            padding: 20px;
+        }
+    }
+    @media only screen and (min-width: 768px){
+        .column{
+            width: 25%;  
+        }
+    }
+    
+}
